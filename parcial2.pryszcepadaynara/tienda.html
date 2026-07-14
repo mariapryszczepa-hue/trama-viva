@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tienda | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+
+<body>
+
+<!-- NAVEGACIÓN -->
+
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="pedidos.html">Mis pedidos</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ENCABEZADO DE LA TIENDA -->
+
+<header class="tienda-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">Tienda artesanal</p>
+
+    <h1>Piezas que continúan<br>la trama</h1>
+
+    <p>
+      Una selección de piezas artesanales que preservan saberes,
+      técnicas e historias transmitidas entre generaciones.
+    </p>
+
+  </div>
+
+</header>
+
+
+<!-- ACÁ VAN A IR LOS PRODUCTOS -->
+
+<main>
+
+  <section class="catalogo section-light">
+
+    <div class="container">
+
+      <p class="eyebrow">Colección artesanal</p>
+      <h2>Historias hechas a mano</h2>
+
+      <p class="catalogo-intro">
+        Cada pieza nace del encuentro entre el territorio, los materiales
+        naturales y los saberes transmitidos entre generaciones.
+      </p>
+
+      <div class="productos-grid">
+
+        <article class="producto-card">
+
+          <img src="img/producto1.jpeg" alt="Canasto artesanal">
+
+          <div class="producto-info">
+            <h3>Canasto de palma</h3>
+            <p>Tejido a mano con fibras naturales y técnicas tradicionales.</p>
+
+            <div class="producto-final">
+              <span>$25.000</span>
+             <a href="producto.html" class="btn-comprar">Ver pieza</a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="producto-card">
+
+          <img src="img/producto2.jpeg" alt="Bolso artesanal">
+
+          <div class="producto-info">
+            <h3>Bolso tejido</h3>
+            <p>Una pieza artesanal que acompaña historias y saberes del territorio.</p>
+
+            <div class="producto-final">
+              <span>$32.000</span>
+              <a href="#" class="btn-comprar">Ver pieza</a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="producto-card">
+
+          <img src="img/producto3.jpeg" alt="Cuenco artesanal">
+
+          <div class="producto-info">
+            <h3>Cuenco de fibra</h3>
+            <p>Realizado a mano a partir de materiales naturales de la región.</p>
+
+            <div class="producto-final">
+              <span>$18.000</span>
+              <a href="#" class="btn-comprar">Ver pieza</a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="producto-card">
+
+          <img src="img/producto4.jpeg" alt="Cesto tradicional">
+
+          <div class="producto-info">
+            <h3>Cesto tradicional</h3>
+            <p>Una pieza que preserva técnicas transmitidas entre generaciones.</p>
+
+            <div class="producto-final">
+              <span>$28.000</span>
+              <a href="#" class="btn-comprar">Ver pieza</a>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+<script src="animaciones.js"></script>
+
+</body>
+
+</html>

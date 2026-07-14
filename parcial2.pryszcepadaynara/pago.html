@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pago | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<main class="checkout">
+
+  <div class="container">
+
+    <!-- PASOS -->
+
+    <div class="checkout-pasos">
+
+      <div class="paso">
+        <span>✓</span>
+        <p>Datos personales</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso activo">
+        <span>02</span>
+        <p>Pago</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso">
+        <span>03</span>
+        <p>Confirmación</p>
+      </div>
+
+    </div>
+
+
+    <div class="checkout-grid">
+
+
+      <!-- INFORMACIÓN DE PAGO -->
+
+      <section class="checkout-formulario">
+
+        <p class="eyebrow">Paso 02</p>
+
+        <h1>Elegí cómo pagar tu pieza</h1>
+
+        <p class="checkout-intro">
+          Seleccioná un método de pago y completá la información necesaria
+          para continuar con tu compra.
+        </p>
+
+
+        <!-- MÉTODOS DE PAGO -->
+
+        <div class="metodos-pago">
+
+          <label class="metodo activo-metodo">
+            <input type="radio" name="pago" checked>
+            <span>Tarjeta de crédito</span>
+          </label>
+
+          <label class="metodo">
+            <input type="radio" name="pago">
+            <span>Tarjeta de débito</span>
+          </label>
+
+          <label class="metodo">
+            <input type="radio" name="pago">
+            <span>Transferencia</span>
+          </label>
+
+        </div>
+
+
+        <!-- FORMULARIO TARJETA -->
+
+        <form>
+
+          <div class="campo">
+            <label>Nombre del titular</label>
+            <input type="text" placeholder="Como aparece en la tarjeta">
+          </div>
+
+
+          <div class="campo">
+            <label>Número de tarjeta</label>
+            <input type="text" placeholder="0000 0000 0000 0000">
+          </div>
+
+
+          <div class="form-doble">
+
+            <div class="campo">
+              <label>Fecha de vencimiento</label>
+              <input type="text" placeholder="MM / AA">
+            </div>
+
+            <div class="campo">
+              <label>Código de seguridad</label>
+              <input type="text" placeholder="CVV">
+            </div>
+
+          </div>
+
+
+          <a href="confirmacion.html" class="btn-checkout">
+            Confirmar compra
+          </a>
+
+          <a href="datos.html" class="volver-checkout">
+            ← Volver a datos personales
+          </a>
+
+        </form>
+
+      </section>
+
+
+      <!-- RESUMEN DEL PEDIDO -->
+
+      <aside class="checkout-resumen">
+
+        <p class="eyebrow">Tu pedido</p>
+
+        <div class="checkout-producto">
+
+          <img src="img/producto1.jpeg" alt="Canasto de palma">
+
+          <div>
+            <h3>Canasto de palma</h3>
+            <p>Cantidad: 1</p>
+            <span>$25.000</span>
+          </div>
+
+        </div>
+
+
+        <div class="resumen-linea">
+          <span>Subtotal</span>
+          <span>$25.000</span>
+        </div>
+
+        <div class="resumen-linea">
+          <span>Envío</span>
+          <span>$3.500</span>
+        </div>
+
+        <div class="resumen-total">
+          <span>Total</span>
+          <span>$28.500</span>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+
+</html>

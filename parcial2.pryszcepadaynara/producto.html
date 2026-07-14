@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canasto de palma | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+
+<!-- NAVEGACIÓN -->
+
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<!-- DETALLE DEL PRODUCTO -->
+
+<main class="detalle-producto">
+
+  <div class="container detalle-grid">
+
+    <!-- IMAGEN -->
+
+    <div class="detalle-imagen">
+      <img src="img/producto1.jpeg" alt="Canasto de palma artesanal">
+    </div>
+
+
+    <!-- INFORMACIÓN -->
+
+    <div class="detalle-info">
+
+      <p class="eyebrow">Pieza artesanal</p>
+
+      <h1>Canasto de palma</h1>
+
+      <p class="detalle-precio">$25.000</p>
+
+      <p class="detalle-descripcion">
+        Pieza realizada a mano con fibras naturales del territorio,
+        utilizando técnicas artesanales transmitidas entre generaciones.
+        Cada trama conserva la memoria, el tiempo y los saberes de quienes
+        mantienen viva esta tradición.
+      </p>
+
+
+      <div class="detalle-datos">
+
+        <div>
+          <span>Material</span>
+          <p>Fibra natural de palma</p>
+        </div>
+
+        <div>
+          <span>Origen</span>
+          <p>Formosa, Argentina</p>
+        </div>
+
+        <div>
+          <span>Elaboración</span>
+          <p>100% artesanal</p>
+        </div>
+
+      </div>
+
+
+<a href="carrito.html" class="btn-agregar">Agregar al carrito</a> 
+
+      <a href="tienda.html" class="volver-tienda">
+        ← Volver a la tienda
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+
+</html>

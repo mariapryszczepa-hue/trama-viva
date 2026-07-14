@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Carrito | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<main class="carrito">
+
+  <div class="container">
+
+    <p class="eyebrow">Tu selección</p>
+    <h1>Carrito</h1>
+
+    <div class="carrito-grid">
+
+
+      <!-- PRODUCTO -->
+
+      <div class="carrito-productos">
+
+        <div class="carrito-item">
+
+          <img src="img/producto1.jpeg" alt="Canasto de palma">
+
+          <div class="carrito-info">
+
+            <p class="carrito-categoria">Pieza artesanal</p>
+
+            <h2>Canasto de palma</h2>
+
+            <p class="carrito-descripcion">
+              Elaborado a mano con fibras naturales y técnicas tradicionales.
+            </p>
+
+            <div class="cantidad">
+              <span>Cantidad</span>
+
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="carrito-precio">
+            $25.000
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RESUMEN -->
+
+      <aside class="resumen-compra">
+
+        <p class="eyebrow">Resumen</p>
+
+        <h2>Tu pedido</h2>
+
+        <div class="resumen-linea">
+          <span>Subtotal</span>
+          <span>$25.000</span>
+        </div>
+
+        <div class="resumen-linea">
+          <span>Envío</span>
+          <span>A calcular</span>
+        </div>
+
+        <div class="resumen-total">
+          <span>Total</span>
+          <span>$25.000</span>
+        </div>
+
+       <a href="datos.html" class="btn-continuar"> Continuar compra
+        </a>
+
+        <a href="tienda.html" class="seguir-comprando">
+          ← Seguir explorando piezas
+        </a>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+
+</html>

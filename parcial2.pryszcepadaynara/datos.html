@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Datos personales | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<main class="checkout">
+
+  <div class="container">
+
+    <!-- PASOS -->
+
+    <div class="checkout-pasos">
+
+      <div class="paso activo">
+        <span>01</span>
+        <p>Datos personales</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso">
+        <span>02</span>
+        <p>Pago</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso">
+        <span>03</span>
+        <p>Confirmación</p>
+      </div>
+
+    </div>
+
+
+    <div class="checkout-grid">
+
+
+      <!-- FORMULARIO -->
+
+      <section class="checkout-formulario">
+
+        <p class="eyebrow">Paso 01</p>
+
+        <h1>¿A dónde enviamos tu pieza?</h1>
+
+        <p class="checkout-intro">
+          Completá tus datos personales para continuar con la compra.
+        </p>
+
+
+        <form>
+
+          <div class="form-doble">
+
+            <div class="campo">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre">
+            </div>
+
+            <div class="campo">
+              <label>Apellido</label>
+              <input type="text" placeholder="Tu apellido">
+            </div>
+
+          </div>
+
+
+          <div class="campo">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="nombre@correo.com">
+          </div>
+
+
+          <div class="campo">
+            <label>Dirección</label>
+            <input type="text" placeholder="Calle y número">
+          </div>
+
+
+          <div class="form-doble">
+
+            <div class="campo">
+              <label>Ciudad</label>
+              <input type="text" placeholder="Tu ciudad">
+            </div>
+
+            <div class="campo">
+              <label>Código postal</label>
+              <input type="text" placeholder="0000">
+            </div>
+
+          </div>
+
+
+          <a href="pago.html" class="btn-checkout">
+            Continuar al pago
+          </a>
+
+          <a href="carrito.html" class="volver-checkout">
+            ← Volver al carrito
+          </a>
+
+        </form>
+
+      </section>
+
+
+      <!-- RESUMEN -->
+
+      <aside class="checkout-resumen">
+
+        <p class="eyebrow">Tu pedido</p>
+
+        <div class="checkout-producto">
+
+          <img src="img/producto1.jpeg" alt="Canasto de palma">
+
+          <div>
+            <h3>Canasto de palma</h3>
+            <p>Cantidad: 1</p>
+            <span>$25.000</span>
+          </div>
+
+        </div>
+
+
+        <div class="resumen-linea">
+          <span>Subtotal</span>
+          <span>$25.000</span>
+        </div>
+
+        <div class="resumen-linea">
+          <span>Envío</span>
+          <span>A calcular</span>
+        </div>
+
+        <div class="resumen-total">
+          <span>Total</span>
+          <span>$25.000</span>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+</html>

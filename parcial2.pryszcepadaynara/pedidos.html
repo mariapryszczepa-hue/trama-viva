@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mis pedidos | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+  
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="pedidos.html">Mis pedidos</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+  </div>
+</nav>
+
+
+<main class="pedidos">
+
+  <div class="container">
+
+    <div class="pedidos-encabezado">
+
+      <div>
+        <p class="eyebrow">Tu historia con Trama Viva</p>
+        <h1>Mis pedidos</h1>
+      </div>
+
+      <p class="pedidos-intro">
+        Consultá las piezas que elegiste y acompañá su recorrido hasta llegar a vos.
+      </p>
+
+    </div>
+
+
+    <div class="lista-pedidos">
+
+
+      <!-- PEDIDO 1 -->
+
+      <article class="pedido-card">
+
+        <div class="pedido-superior">
+
+          <div>
+            <span>Número de pedido</span>
+            <p>#TV-00124</p>
+          </div>
+
+          <div>
+            <span>Fecha</span>
+            <p>07 julio 2026</p>
+          </div>
+
+          <div>
+            <span>Total</span>
+            <p>$28.500</p>
+          </div>
+
+          <div class="estado-pedido">
+            Pedido recibido
+          </div>
+
+        </div>
+
+
+        <div class="pedido-producto">
+
+          <img src="img/producto1.jpeg" alt="Canasto de palma">
+
+          <div class="pedido-info">
+            <p class="eyebrow">Pieza artesanal</p>
+            <h2>Canasto de palma</h2>
+            <p>
+              Elaborado a mano con fibras naturales y técnicas tradicionales.
+            </p>
+          </div>
+
+          <a href="producto.html" class="btn-ver-pedido">
+            Ver pieza
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PEDIDO 2 -->
+
+      <article class="pedido-card">
+
+        <div class="pedido-superior">
+
+          <div>
+            <span>Número de pedido</span>
+            <p>#TV-00098</p>
+          </div>
+
+          <div>
+            <span>Fecha</span>
+            <p>18 mayo 2026</p>
+          </div>
+
+          <div>
+            <span>Total</span>
+            <p>$32.000</p>
+          </div>
+
+          <div class="estado-pedido entregado">
+            Entregado
+          </div>
+
+        </div>
+
+
+        <div class="pedido-producto">
+
+          <img src="img/producto2.jpeg" alt="Bolso tejido">
+
+          <div class="pedido-info">
+            <p class="eyebrow">Pieza artesanal</p>
+            <h2>Bolso tejido</h2>
+            <p>
+              Una pieza artesanal que acompaña historias y saberes del territorio.
+            </p>
+          </div>
+
+          <a href="tienda.html" class="btn-ver-pedido">
+            Ver tienda
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+
+</html>

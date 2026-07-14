@@ -1,0 +1,279 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trama Viva</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <img src="img/logo.png" alt="Trama viva">
+    </div>
+
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="pedidos.html">Mis pedidos</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<header class="hero" id="inicio">
+<div class="overlay"></div>
+
+<div class="container hero-grid">
+
+<div class="hero-left">
+<p class="eyebrow">Donde el hilo se cruza, la memoria respira</p>
+<h1>TRAMA<br>VIVA</h1>
+<p class="hero-text">
+Archivo fotográfico sobre el arte ancestral de las mujeres Pilagá.
+</p>
+
+<div class="hero-buttons">
+<a href="#proyecto" class="btn ghost">Conocer Historia</a>
+<a href="#galeria" class="btn fill">Ver Galería</a>
+</div>
+</div>
+
+
+</header>
+
+<section class="about section-light" id="proyecto">
+<div class="container split">
+
+<div>
+<p class="eyebrow">El Proyecto</p>
+<h2>Arte, raíz y permanencia.</h2>
+<p>
+Trama Viva honra el trabajo artesanal de las comunidades originarias de Pozo del Tigre, 
+una localidad ubicada en el interior de la provincia de Formosa.
+</p>
+<p>A través de una mirada íntima y poética, busca visibilizar y poner en valor los gestos, los materiales y 
+los silencios que habitan el trabajo artesanal.</p>
+<p>Este proyecto nace desde la ternura y el compromiso, con la esperanza de despertar en quien mira un 
+sentido de pertenencia, respeto y asombro hacia una cultura que resiste, enseña y abraza</p>
+ <div class="texto-extra">
+    <p>
+      Cada tejido encierra una memoria ancestral transmitida de generación en generación. 
+      Las manos que crean estas piezas no solo producen objetos: construyen relatos, preservan símbolos 
+      y sostienen una identidad colectiva.
+    </p>
+
+    <p>
+      Trama Viva propone una pausa para mirar con atención, para reconocer en cada textura una forma 
+      de resistencia cultural, un gesto de cuidado y una expresión viva del territorio formoseño.
+    </p>
+  </div>
+  <button class="btn-leer" onclick="mostrarTexto()">Conocé más</button>
+
+</div>
+
+<div class="glass-panel">
+<img src="img/niño.jpg" alt=""></div>
+
+</div>
+</section>
+
+<section class="frase">
+  <div class="frase-content">
+    <span class="comillas">“</span>
+    <p>
+      Cada hilo es una historia.<br>
+      Cada mano, un puente entre generaciones.
+    </p>
+    <div class="ornamento"></div>
+  </div>
+</section>
+
+<section class="galeria section-light" id="galeria">
+  <div class="container">
+
+    <p class="eyebrow">Galería Viva</p>
+    <h2>Texturas que cuentan historias</h2>
+<div class="grid-gallery">
+
+  <div class="columna">
+    <img src="img/imagen1.jpg" alt="Artesanía Pilagá" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+
+    <img src="img/imagen 2.jpg" alt="Trabajo artesanal" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+  </div>
+
+  <div class="columna">
+    <img class="offset imagen-modal" src="img/imagen3.jpg" alt="Memoria ancestral"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+
+    <img src="img/imagen4.jpg" alt="Saberes Pilagá" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+  </div>
+
+  <div class="columna">
+    <img src="img/imagen5.jpg" alt="Artesanía originaria" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+
+    <img src="img/imagen6.jpg" alt="Tradición artesanal" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+  </div>
+
+  <div class="columna">
+    <img class="offset imagen-modal" src="img/imagen7.jpg" alt="Cultura Pilagá"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+
+    <img src="img/imagen8.jpeg" alt="Trama Viva" class="imagen-modal"
+    data-bs-toggle="modal" data-bs-target="#modalGaleria">
+  </div>
+
+</div>
+</section>
+
+<div class="modal fade" id="modalGaleria" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+
+    <div class="modal-content modal-trama">
+
+      <button 
+        type="button" 
+        class="btn-close btn-close-white"
+        data-bs-dismiss="modal">
+      </button>
+
+      <img 
+        src="img/imagen1.jpg" 
+        alt="Galería Trama Viva"
+        id="imagenModalGrande">
+
+      <div class="modal-texto">
+
+        <p class="eyebrow">Galería Viva</p>
+
+        <h2>Memorias que permanecen</h2>
+
+        <p>
+          Cada imagen forma parte de un archivo visual que busca
+          preservar los gestos, las texturas y los saberes de las
+          mujeres artesanas Pilagá.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<section class="artesanas section-dark" id="artesanas">
+<div class="container">
+<p class="eyebrow">Las Artesanas</p>
+<h2>Mujeres que sostienen la memoria</h2>
+
+<div class="cards">
+
+  <div class="person glass-box">
+    <img src="img/darmaris.png" alt="Retrato de Darmarias" class="foto-artesana">
+    <h3>Darmarias</h3>
+    <p>Aprendió a tejer de su abuela.</p>
+  </div>
+
+  <div class="person glass-box">
+    <img src="img/paulaicono.png" alt="Retrato de Paula" class="foto-artesana">
+    <h3>Paula</h3>
+    <p>Guarda saberes antiguos.</p>
+  </div>
+
+  <div class="person glass-box">
+    <img src="img/ana.png" alt="Retrato de Ana" class="foto-artesana">
+    <h3>Ana</h3>
+    <p>Teje historias de comunidad.</p>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+<section class="cta section-light" id="contacto">
+<div class="container center">
+<p class="eyebrow">Acompaña la trama</p>
+<h2>Conocé, difundí y valorá el trabajo Pilagá.</h2>
+
+</div>
+</section>
+
+<footer>
+TRAMA VIVA · Formosa · Argentina
+</footer>
+
+<script>
+function mostrarTexto() {
+  const texto = document.querySelector(".texto-extra");
+  
+  if(texto.style.display === "block"){
+    texto.style.display = "none";
+  } else {
+    texto.style.display = "block";
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const imagenesGaleria = document.querySelectorAll(".imagen-modal");
+const imagenModalGrande = document.querySelector("#imagenModalGrande");
+
+imagenesGaleria.forEach(imagen => {
+
+  imagen.addEventListener("click", function(){
+
+    imagenModalGrande.src = this.src;
+    imagenModalGrande.alt = this.alt;
+
+  });
+
+});
+
+</script>
+
+<script src="animaciones.js"></script>
+<script>
+const linksMenu = document.querySelectorAll(".menu a");
+
+linksMenu.forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".menu").classList.remove("activo");
+  });
+});
+</script>
+
+</body>
+</html>

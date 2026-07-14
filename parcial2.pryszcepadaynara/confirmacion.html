@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pedido confirmado | Trama Viva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function toggleMenu(){
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("activo");
+}
+</script>
+<body>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+<nav class="navbar">
+  <div class="container nav-content">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Trama Viva">
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#artesanas">Artesanas</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<main class="confirmacion">
+
+  <div class="container">
+
+    <!-- PASOS -->
+
+    <div class="checkout-pasos">
+
+      <div class="paso">
+        <span>✓</span>
+        <p>Datos personales</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso">
+        <span>✓</span>
+        <p>Pago</p>
+      </div>
+
+      <div class="linea-paso"></div>
+
+      <div class="paso activo">
+        <span>03</span>
+        <p>Confirmación</p>
+      </div>
+
+    </div>
+
+
+    <!-- MENSAJE DE CONFIRMACIÓN -->
+
+    <section class="confirmacion-contenido">
+
+      <div class="confirmacion-icono">
+        ✓
+      </div>
+
+      <p class="eyebrow">Pedido confirmado</p>
+
+      <h1>Tu pieza ya es parte<br>de una nueva historia.</h1>
+
+      <p class="confirmacion-texto">
+        Gracias por acompañar y valorar el trabajo artesanal.
+        Recibimos correctamente tu pedido y pronto comenzará su camino hacia vos.
+      </p>
+
+
+      <!-- DATOS DEL PEDIDO -->
+
+      <div class="confirmacion-pedido">
+
+        <div>
+          <span>Número de pedido</span>
+          <p>#TV-00124</p>
+        </div>
+
+        <div>
+          <span>Producto</span>
+          <p>Canasto de palma</p>
+        </div>
+
+        <div>
+          <span>Total</span>
+          <p>$28.500</p>
+        </div>
+
+        <div>
+          <span>Estado</span>
+          <p>Pedido recibido</p>
+        </div>
+
+      </div>
+
+
+      <div class="confirmacion-botones">
+
+        <a href="tienda.html" class="btn-checkout">
+          Seguir explorando piezas
+        </a>
+
+        <a href="pedidos.html" class="volver-checkout">
+          Ver mis pedidos
+        </a>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+
+<footer>
+  TRAMA VIVA · Formosa · Argentina
+</footer>
+
+</body>
+</html>
